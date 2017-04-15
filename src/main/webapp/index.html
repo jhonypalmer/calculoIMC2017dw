@@ -1,15 +1,43 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Web Application - DW</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculo de IMC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="calculo-imc.js"></script>
+    <script>
+        //alert("Tá carregando!");
+    </script>
   </head>
   <body>
-    <h1>Web Application - DW</h1>
-    <a href="exemplo-css">Exemplo CSS</a>
-    <br>
-    <a href="exemplo-bootstrap">Exemplo Bootstrap</a>
-    <br>
-    <a href="exemplo-javascript">Exemplo JavaScript</a>
+    <div class="col-md-12">
+        <div class="modal-dialog" style="margin-bottom:0">
+            <div class="modal-content">
+                <div class="panel-heading">
+                    <h1>Cálculo de IMC</h1>
+                </div>
+                <div class="panel-body">
+                <form name="formulario">
+                    <fieldset>
+                        <div class="form-group">
+                            <label>Altura:</label>
+                            <input class="form-control" placeholder="metros" name="altura" type="text" autofocus="">
+                        </div>
+                        <div class="form-group">
+                            <label>Peso:</label>
+                            <input class="form-control" placeholder="quilos" name="peso" type="text" autofocus="">
+                        </div>
+                        <div class="form-group">
+                            <label>Sexo:</label>
+                            <input class="form-control" placeholder="sexo" name="sexo" type="text" autofocus="">
+                        </div>                        
+                        <button class="btn btn-sm btn-success" type="button" onclick="calcular()">Calcular</a>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
   </body>
 </html>
